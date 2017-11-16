@@ -10449,9 +10449,9 @@ Please send your comments to the mail address above.</description>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="I1" x="-12.7" y="5.08" length="middle"/>
 <pin name="GND" x="-12.7" y="0" length="middle"/>
 <pin name="I0" x="-12.7" y="-5.08" length="middle"/>
-<pin name="I1" x="-12.7" y="5.08" length="middle"/>
 <pin name="S" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="Z" x="12.7" y="-5.08" length="middle" rot="R180"/>
@@ -12132,13 +12132,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps61070.pdf</description>
 <wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.1016" layer="21"/>
 <wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.1016" layer="21"/>
 <wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.1016" layer="21"/>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.825" layer="51" rot="R180"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.825" layer="51" rot="R180"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.825" layer="51" rot="R180"/>
-<rectangle x1="0.7" y1="0.825" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-0.25" y1="0.825" x2="0.25" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.825" x2="-0.7" y2="1.5" layer="51"/>
-<rectangle x1="-1.425" y1="-0.75" x2="0" y2="0" layer="21"/>
 <smd name="1" x="-0.95" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
 <smd name="2" x="0" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
 <smd name="3" x="0.95" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
@@ -12147,25 +12140,32 @@ Source: http://focus.ti.com/lit/ds/symlink/tps61070.pdf</description>
 <smd name="6" x="-0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
 <text x="-1.27" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.825" layer="51" rot="R180"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.825" layer="51" rot="R180"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.825" layer="51" rot="R180"/>
+<rectangle x1="0.7" y1="0.825" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.825" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.825" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="-1.425" y1="-0.75" x2="0" y2="0" layer="21"/>
 </package>
 </packages>
 <symbols>
 <symbol name="TPS56120X">
+<pin name="GND" x="-15.24" y="5.08" length="middle"/>
+<pin name="SW" x="-15.24" y="0" length="middle"/>
+<pin name="VIN" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VBST" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="EN" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VFB" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="EN" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="-15.24" y="5.08" length="middle"/>
-<pin name="SW" x="-15.24" y="0" length="middle"/>
-<pin name="VBST" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="VFB" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="VIN" x="-15.24" y="-5.08" length="middle"/>
 <text x="-7.62" y="7.62" size="1.778" layer="94">TPS56120X</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TPS56120X" uservalue="yes">
+<deviceset name="TPS56120X">
 <gates>
 <gate name="G$1" symbol="TPS56120X" x="0" y="0"/>
 </gates>
@@ -12730,7 +12730,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <part name="C51" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY34" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12776,7 +12775,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="IC1" gate="G$1" x="66.04" y="-5.08"/>
 <instance part="C51" gate="G$1" x="78.74" y="-12.7" rot="R180"/>
 <instance part="SUPPLY1" gate="G$1" x="78.74" y="17.78"/>
-<instance part="GND5" gate="1" x="73.66" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -12849,11 +12847,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="78.74" y1="-20.32" x2="78.74" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="66.04" y="-20.32"/>
 </segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="73.66" y1="58.42" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="VIN2" class="0">
 <segment>
@@ -12922,19 +12915,14 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="L3" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="53.34" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
-<junction x="66.04" y="71.12"/>
-<wire x1="71.12" y1="71.12" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
+<wire x1="71.12" y1="71.12" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="73.66" y1="66.04" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <junction x="71.12" y="71.12"/>
+<pinref part="L3" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -13031,6 +13019,14 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="78.74" y1="-5.08" x2="78.74" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="78.74" y="-5.08"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="73.66" y1="58.42" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
