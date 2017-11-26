@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1751,6 +1751,44 @@ For Reference, see Amotec Display part ADM0802A (http://amotec-display.com/pdf/A
 <vertex x="20" y="2.4"/>
 </polygon>
 <circle x="28.2" y="-7.6" radius="0.412309375" width="1.5" layer="21"/>
+</package>
+<package name="LCD-JHD12864">
+<wire x1="-48.895" y1="34.925" x2="48.895" y2="34.925" width="0.127" layer="20"/>
+<wire x1="48.895" y1="34.925" x2="48.895" y2="-34.925" width="0.127" layer="20"/>
+<wire x1="48.895" y1="-34.925" x2="-48.895" y2="-34.925" width="0.127" layer="20"/>
+<wire x1="-48.895" y1="-34.925" x2="-48.895" y2="34.925" width="0.127" layer="20"/>
+<pad name="K" x="-34.29" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="A" x="-31.75" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="VEE" x="-29.21" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="RST" x="-26.67" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="CS1" x="-24.13" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="CS2" x="-21.59" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB7" x="-19.05" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB6" x="-16.51" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB5" x="-13.97" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB4" x="-11.43" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB3" x="-8.89" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB2" x="-6.35" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB1" x="-3.81" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="DB0" x="-1.27" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="E" x="1.27" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="R/W" x="3.81" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="D/I" x="6.35" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="VO" x="8.89" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="VDD" x="11.43" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<pad name="VSS" x="13.97" y="-33.655" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-45.72" y1="-25.4" x2="45.72" y2="-25.4" width="0.127" layer="20"/>
+<wire x1="45.72" y1="-25.4" x2="45.72" y2="25.4" width="0.127" layer="20"/>
+<wire x1="45.72" y1="25.4" x2="-45.72" y2="25.4" width="0.127" layer="20"/>
+<wire x1="-45.72" y1="25.4" x2="-45.72" y2="-25.4" width="0.127" layer="20"/>
+<wire x1="-43.18" y1="24.13" x2="43.18" y2="24.13" width="0.127" layer="20"/>
+<wire x1="43.18" y1="24.13" x2="43.18" y2="-24.13" width="0.127" layer="20"/>
+<wire x1="43.18" y1="-24.13" x2="-43.18" y2="-24.13" width="0.127" layer="20"/>
+<wire x1="-43.18" y1="-24.13" x2="-43.18" y2="24.13" width="0.127" layer="20"/>
+<hole x="-45.085" y="-32.385" drill="2.8"/>
+<hole x="45.085" y="-32.385" drill="2.8"/>
+<hole x="45.085" y="32.385" drill="2.8"/>
+<hole x="-45.085" y="32.385" drill="2.8"/>
 </package>
 </packages>
 <symbols>

@@ -3092,8 +3092,8 @@ Footprint is not yet proven. Double check it. Spark Fun Electronics SKU : LCD-00
 <device name="BARE" package="1X20">
 <connects>
 <connect gate="G$1" pin="A" pad="19"/>
-<connect gate="G$1" pin="CS1" pad="15"/>
-<connect gate="G$1" pin="CS2" pad="16"/>
+<connect gate="G$1" pin="CS1" pad="16"/>
+<connect gate="G$1" pin="CS2" pad="15"/>
 <connect gate="G$1" pin="D/I" pad="4"/>
 <connect gate="G$1" pin="DB0" pad="7"/>
 <connect gate="G$1" pin="DB1" pad="8"/>
